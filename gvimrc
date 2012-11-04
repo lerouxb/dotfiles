@@ -1,13 +1,16 @@
+set background=light
+
 "set number
 set foldcolumn=1
 
 " Fullscreen takes up entire screen
 "set fuoptions=maxhorz,maxvert,background:#001B1E1F
-if &background=="dark"
-    set fuoptions=maxhorz,maxvert,background:#00000000
-else
-    set fuoptions=maxhorz,maxvert,background:#00ffffff
-endif
+"if &background=="dark"
+"    set fuoptions=maxhorz,maxvert,background:#ff000000
+"else
+"    set fuoptions=maxhorz,maxvert,background:#ffffffff
+"endif
+set fuoptions=maxhorz,maxvert,background:#ffffffff
 
 " Start in fullscreen mode
 set fu

@@ -73,16 +73,6 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,*.swp,*.swo,_compiled,_old,node_modul
 " Command-T configuration
 let g:CommandTMaxHeight=20
 
-" probably only for gvim?
-"colorscheme slate
-"colorscheme github
-"set background=dark
-set background=light
-"colorscheme solarized
-"colorscheme twilight
-"colorscheme desertEx
-colorscheme hemisu
-
 " default encoding
 set encoding=utf-8
 
@@ -90,20 +80,18 @@ set encoding=utf-8
 set nobackup
 set nowritebackup
 
-" highlight trailing whitespace
-"highlight ExtraWhitespace ctermbg=red guibg=red
-"match ExtraWhitespace /\s\+$|\t/
-"autocmd BufWinEnter * highlight ExtraWhitespace ctermbg=red guibg=red
-"autocmd BufWinEnter * match ExtraWhitespace /\s\+$|\t/
-"autocmd BufWinLeave * call clearmatches()
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
 
 let g:ctrlp_custom_ignore = '\.DS_Store$'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_map = '<Leader-p>'
+
+" highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
+
+set background=dark " the terminal is probably dark 
+colorscheme hemisu
