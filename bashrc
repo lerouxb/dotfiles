@@ -106,3 +106,4 @@ export PATH=$PATH:$GOPATH/bin
 export NVM_DIR="/Users/leroux/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+alias ramdisk='diskutil erasevolume HFS+ "4GBRAMDisk" `hdiutil attach -nomount ram://8388608`'

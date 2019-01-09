@@ -123,11 +123,16 @@ autocmd ColorScheme * match ExtraWhitespace /\s\+$/
 autocmd BufEnter * match ExtraWhitespace /\s\+$/
 
 " four spaces for python
-au BufNewFile,BufReadPost *.python setl shiftwidth=4 softtabstop=4 expandtab
+au BufNewFile,BufReadPost *.py setl shiftwidth=4 softtabstop=4 expandtab
+
+" four spaces for javascript
+au BufNewFile,BufReadPost *.js setl shiftwidth=4 softtabstop=4 expandtab
 
 
-set background=dark " the terminal is probably dark
+set background=light
 colorscheme hemisu
 
 au BufNewFile,BufRead *.psql setf psql
 autocmd BufNewFile,BufRead *.json set ft=javascript
+
+let g:github_enterprise_urls = ['https://github.services.mckinseywave.com']
