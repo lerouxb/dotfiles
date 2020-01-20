@@ -135,4 +135,3 @@ colorscheme hemisu
 au BufNewFile,BufRead *.psql setf psql
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
-let g:github_enterprise_urls = ['https://github.services.mckinseywave.com']
